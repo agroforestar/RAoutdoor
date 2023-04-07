@@ -18,7 +18,7 @@ public class ManagerTree : MonoBehaviour
 
     private void changePrefab()
     {
-        Debug.Log("begin");
+        
         growth[] children =  this.GetComponentsInChildren<growth>();
         foreach (var child in children)
         {

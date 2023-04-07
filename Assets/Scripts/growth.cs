@@ -29,7 +29,6 @@ public class growth : MonoBehaviour
         object[] allVisu = Resources.LoadAll(dir);
 
         GameObject current = this.transform.gameObject;
-        Debug.Log(CurrentVisu);
         CurrentVisu= (CurrentVisu+1)%allVisu.Length;
         GameObject newVisu = Resources.Load(dir + objectName+"_"+ CurrentVisu.ToString() )as GameObject;;
         newVisu = Instantiate(newVisu);
